@@ -36,9 +36,42 @@
             border-radius: 50%;
         }
     </style>
+
+    <script type="text/javascript">
+        function showshape(shape) {
+
+            var circle = document.getElementById("circle");
+            var square = document.getElementById("square");
+            var triangle = document.getElementById("triangle");
+            var oval = document.getElementById("oval");
+
+            if (circle.checked == true)
+                alert("abc")
+            else if (square.checked == true)
+                alert("abc")
+            else if (traingle.checked == true)
+                alert("abc")
+            else (oval.checked == true)
+                alert("abc")
+        }
+    </script>
+
 </head>
 
 <body>
+    <form>
+        <p>Please select your favorite Shape:</p>
+        <input type="radio" id="circle" name="shape" value="circle">
+        <label for="circle">circle</label><br>
+        <input type="radio" id="square" name="shape" value="square">
+        <label for="square">square</label><br>
+        <input type="radio" id="triangle" name="shape" value="triangle">
+        <label for="triangle">triangle</label><br>
+        <input type="radio" id="oval" name="shape" value="oval">
+        <label for="oval">oval</label><br>
+        <input type="button" onclick="showshape()" value="display your shape"><br>
+    </form>
+
     <h2>Circle</h2>
     <table class="circle"></table>
     <h2>Square</h2>
