@@ -1,4 +1,4 @@
-function showshape(shape) {
+function showshape() {
 
     let circle = document.getElementById("circle");
     let square = document.getElementById("square");
@@ -26,3 +26,7 @@ function showshape(shape) {
         }
     }
 }
+
+window.onload = function() {
+    showshape();
+  };
