@@ -27,6 +27,4 @@ function showshape() {
     }
 }
 
-window.onload = function() {
-    showshape();
-  };
+window.onload = showshape;
