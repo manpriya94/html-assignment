@@ -12,16 +12,15 @@
 }
 
 .triangle {
-    width: 0;
-    height: 0;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 50px solid rgb(14, 58, 103);
+    width: 100px;
+    height: 100px;
+    background: red linear-gradient(red, blue);
+    clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
 }
 
 .oval {
     height: 50px;
     width: 90px;
-    background-color: rgb(149, 84, 167);
+    background: red linear-gradient(red, blue);
     border-radius: 50%;
 }
