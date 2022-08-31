@@ -1,23 +1,14 @@
 function showshape() {
-
     const all_inputs = document.getElementsByName("shape");
-    const all_shapes = document.getElementsByClassName("shape");
 
     let shape_id;
 
     for (const input of all_inputs) {
-        if (input.checked === true) {
-            shape_id = input.id + '_shape';
-            break;
-        }
-    }
-
-    for (let shape of all_shapes) {
-        if (shape.id === shape_id) {
-            shape.hidden = false;
-        } else {
-            shape.hidden = true;
-        }
+        shape_id = input.id + '_shape';
+        if (input.checked === true)
+            document.getElementById(shape_id).hidden = false;
+        else
+            document.getElementById(shape_id).hidden = true;
     }
 }
 
